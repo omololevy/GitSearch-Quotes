@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Output } from '@angular/core';
 import { SearchGithubService } from '../search-github.service';
 import { HttpClient } from '@angular/common/http';
 import { NgForm } from '@angular/forms';
@@ -12,6 +12,7 @@ export class GitFormComponent implements OnInit {
 
 	username: string;
 	searchGithubService:SearchGithubService;
+
 
 	submitUsername() {
 		this.searchGithubService.getUserData(this.username);
