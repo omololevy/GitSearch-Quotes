@@ -14,8 +14,8 @@ export class GitFormComponent implements OnInit {
 	searchGithubService:SearchGithubService;
 
 	submitUsername() {
-		this.searchGithubService.testingService();
-		// return this.http.get('http://adzumi.co.ke');
+		// this.searchGithubService.testingService();
+		return this.http.get("http://adzumi.co.ke");
 
 	}
 
