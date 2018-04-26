@@ -1,12 +1,19 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable()
 export class SearchGithubService {
 
-	testingService(){
-		console.log("Service is Working Perfectly. Now add a HTTP request and we're good to go. Samora.");
+
+
+	getUserData(username: string){
+		this.http.get("https://api.github.com/users/" + username).subscribe(data => {
+      		console.log(data);
+    	});
 	}
 
-  	constructor() { }
+
+
+  	constructor(private http: HttpClient) { }
 
 }

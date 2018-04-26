@@ -14,12 +14,13 @@ export class GitFormComponent implements OnInit {
 	searchGithubService:SearchGithubService;
 
 	submitUsername() {
-		// this.searchGithubService.testingService();
-		return this.http.get("http://adzumi.co.ke");
+		this.searchGithubService.getUserData(this.username);
+		// console.log(this.username);
+		
 
 	}
 
-  	constructor(private http: HttpClient, searchGithubService:SearchGithubService) { 
+  	constructor(searchGithubService:SearchGithubService) { 
   		this.searchGithubService = searchGithubService;
   	}
 
