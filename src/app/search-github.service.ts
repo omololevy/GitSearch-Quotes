@@ -7,15 +7,15 @@ import { User } from './user';
 export class SearchGithubService {
 
 	user:User;
+	response: any = [];
 
   	constructor(private http: HttpClient) { 
-  		this.user=new User(0,'');
   	}
 
 	getUserData(username: string){
 
 		interface ApiResponse{
-	        noOfRepos:string;
+	        public_repos:number;
 	        bio:string
 
 	    }
@@ -24,9 +24,14 @@ export class SearchGithubService {
 	        this.http.get<ApiResponse>("https://api.github.com/users/" + username).toPromise().then(response=>{
 	            
 	            // console.log(response.bio);
-	            this.user.bio=response.bio
+	            // this.userdata = new User(response.public_repos,response.bio);
+	            // this.data.push(this.userdata);
+	            this.response = response.bio;
+	            return this.response;
 
-	            resolve()
+	            // console.log(this.response);
+
+	            // resolve()
 	        },
 	        error=>{
 	                // this.quote.quote="Never, never, never give up."
