@@ -1,17 +1,17 @@
-<div class="row mt80">
+<div class="row mt150">
 	<div class="col-md-2"></div>
 	<div class="col-md-8 git-form">
 		<!-- <h1 class="heading">Github Search</h1> -->
 		<img class="mb15" src="./assets/images/logo.png">
-		<form>
+		<form (ngSubmit)='submitUsername()' #gitForm='ngForm' name="gitForm">
 			<div class="row">
-				<div class="col-md-2"></div>
-				<div class="col-md-8">
-					<input type="text" class="form-control input-lg mb15" name="repo" autocomplete="off" placeholder="Search Github Repositories...">
-					<button class="btn btn-success btn-lg btn-block" type="submit">Search</button>
+				<div class="col-md-3"></div>
+				<div class="col-md-6">
+					<input type="text" class="form-control input-lg mb15" id="username" [(ngModel)]="username" name="username" autocomplete="off" placeholder="Search Github Repositories...">
+					<button type="submit" class="btn btn-success btn-lg btn-block">Search</button>
 					<hr>
 				</div>
-				<div class="col-md-2"></div>
+				<div class="col-md-3"></div>
 			</div>
 		</form>
 	</div>

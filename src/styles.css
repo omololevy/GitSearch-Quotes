@@ -3,3 +3,13 @@
 body {
     font-family: 'Lato', sans-serif !important;
 }
+
+.footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+}
+.footer p {
+	font-size: 11px;
+}

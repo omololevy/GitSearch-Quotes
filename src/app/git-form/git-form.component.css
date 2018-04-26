@@ -1,16 +1,7 @@
 
-/*.heading {
-	text-align: center;
-	font-family: 'LatoRegular', sans-serif;
-	font-size: 36px;
-	margin-top: 20px;
-    margin-bottom: 10px;
-    font-weight: 700;
-    color: #636e7b;
-}*/
 
 .git-form img {
-	width:70%;
+	width:50%;
 	height: auto;
 	display: block;
     margin-left: auto;
@@ -21,8 +12,14 @@
     background-color: #1CAF9A;
     border-color: #17a08c;
     border-radius: 3px;
-        color: #fff;
+    color: #fff;
 }
+
+.btn-success:focus, .btn-success:active {
+    background-color: #17a08c;
+    border-color: #17a08c;
+}
+
 
 .btn-block {
     display: block;
@@ -45,6 +42,6 @@
 	margin-bottom:15px;
 }
 
-.mt80 {
-	margin-top:80px;
+.mt150 {
+	margin-top:150px;
 }
