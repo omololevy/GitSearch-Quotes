@@ -1,21 +1,26 @@
-import { Component, OnInit,Input,Output } from '@angular/core';
+import { Component, OnInit,Output } from '@angular/core';
 import { SearchGithubService } from '../search-github.service';
+import { HttpClient } from '@angular/common/http';
+import { NgForm } from '@angular/forms';
 import { User } from '../user';
 
 @Component({
   selector: 'app-git-search-results',
   templateUrl: './git-search-results.component.html',
-  providers:[SearchGithubService], 
   styleUrls: ['./git-search-results.component.css']
 })
+
 export class GitSearchResultsComponent implements OnInit {
 
-  	constructor() {
-  		
-  	}
+    user:User;
+    searchGithubService:SearchGithubService;
+
+  	constructor(searchGithubService:SearchGithubService) { 
+      this.searchGithubService = searchGithubService;
+    }
 
   	ngOnInit() {
-  		
+  		this.user=this.searchGithubService.user;
   	}
 
 }
