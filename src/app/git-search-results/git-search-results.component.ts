@@ -10,10 +10,8 @@ import { User } from '../user';
 })
 export class GitSearchResultsComponent implements OnInit {
 
-	userdata: string;
-
-  	constructor(private searchGithubService:SearchGithubService) {
-  		this.userdata = searchGithubService.response;
+  	constructor() {
+  		
   	}
 
   	ngOnInit() {

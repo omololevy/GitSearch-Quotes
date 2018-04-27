@@ -1,4 +1,4 @@
 export class User {
 
-	constructor(public noOfRepos: number, public bio: string){}
+	constructor(public bio: string, public public_repos: number){}
 }
