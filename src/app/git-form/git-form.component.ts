@@ -17,7 +17,8 @@ export class GitFormComponent implements OnInit {
 
 
 	submitUsername() {
-		this.searchGithubService.getUserData(this.username);		
+		this.searchGithubService.getUserData(this.username);
+    this.searchGithubService.getRepoData(this.username);		
     this.user=this.searchGithubService.user;
 	}
 

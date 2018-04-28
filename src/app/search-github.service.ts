@@ -46,4 +46,27 @@ export class SearchGithubService {
 	    return promise
 	}
 
+	getRepoData(username: string){
+
+		interface ApiResponse{	    
+	    }
+
+	    let promise =new Promise((resolve,reject)=>{
+	        this.http.get<ApiResponse>("https://api.github.com/users/" + username + "/repos").toPromise().then(repository=>{
+	            
+	            
+
+	            resolve()
+	        },
+	        error=>{
+	                // this.quote.quote="Never, never, never give up."
+	                // this.quote.author="winston churchill"
+	                reject(error)
+	            }
+	        )
+	    })
+
+	    return promise
+	}
+
 }
