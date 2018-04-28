@@ -12,6 +12,7 @@ import { User } from '../user';
 export class GitFormComponent implements OnInit {
 
   user:User;
+  repoData: any = [];
 	username: string;
 	searchGithubService:SearchGithubService;
 
@@ -19,6 +20,7 @@ export class GitFormComponent implements OnInit {
 	submitUsername() {
 		this.searchGithubService.getUserData(this.username);		
     this.user=this.searchGithubService.user;
+    console.log(this.searchGithubService.repoData);
 	}
 
   	constructor(searchGithubService:SearchGithubService) { 
