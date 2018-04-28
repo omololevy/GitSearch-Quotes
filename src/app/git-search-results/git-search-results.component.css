@@ -6,3 +6,25 @@
 .mb15 {
 	margin-bottom:15px;
 }
+
+.profile h4 {
+	color: #007bff !important;
+}
+
+.profile img {
+	width: 150px;
+	height:auto;
+}
+
+p.bio {
+	font-size: 15px;
+}
+
+p.stat {
+	font-size: 11px;
+	margin-bottom: 2px !important;
+}
+
+.profile p {
+	margin-bottom: 5px;
+}
