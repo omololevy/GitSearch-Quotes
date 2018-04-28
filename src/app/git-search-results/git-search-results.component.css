@@ -7,9 +7,23 @@
 	margin-bottom:15px;
 }
 
-.profile h4 {
-	color: #1CAF9A !important;
+.mb50 {
+	margin-bottom:50px;
 }
+
+.profile h4, .git-results h4 {
+	color: #1CAF9A !important;
+	margin-bottom: 0;
+}
+
+.git-results .last-update {
+	font-size: 12px;
+}
+
+.git-results p {
+	margin-bottom: 0px;
+}
+
 
 .stat a {
 	color: #1CAF9A !important;

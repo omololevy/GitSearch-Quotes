@@ -1,28 +1,27 @@
 
-<div class="row">
+<div class="row mb50">
 	<div class="col-md-1"></div>
   <div class="col-md-3 profile">
-    <h4>{{searchGithubService.user.login}}</h4>
+    <h4>{{user.login}}</h4>
     <img class="mb15" src="{{searchGithubService.user.avatar_url}}">
-    <p class="bio">{{searchGithubService.user.bio}}</p>
-    <p class="stat">Date Joined: <strong>{{searchGithubService.user.created_at|date}}</strong></p>
-    <p class="stat">Last Update: <strong>{{searchGithubService.user.updated_at|date}}</strong></p>
-    <p class="stat">Number of Repos: <strong>{{searchGithubService.user.public_repos}}</strong></p>
-    <p class="stat"><i class="fa fa-github-alt" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;<a href="">View Github Profile</a></p>
+    <p class="bio">{{user.bio}}</p>
+    <p class="stat">Date Joined: <strong>{{user.created_at|date}}</strong></p>
+    <p class="stat">Last Update: <strong>{{user.updated_at|date}}</strong></p>
+    <p class="stat">Number of Repos: <strong>{{user.public_repos}}</strong></p>
+    <p class="stat"><i class="fa fa-github-alt" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;<a href="{{user.html_url}}" target="_blank">View Github Profile</a></p>
   </div>
-	<div class="col-md-7">
+	<div class="col-md-5">
 		 <div class="panel panel-default" >
                 <div class="panel-heading">
                     <h3 class="panel-title"></h3>
                 </div><!-- panel-heading -->
-                <div class="panel-body">
-                    
-                    <div class="results-list">                        
-                        <div class="media" *ngFor='let repoDetail of repoDetails'>
+                <div class="panel-body">                    
+                    <div class="git-results">                        
+                        <div class="media mb15" *ngFor='let repoDetail of repoDetails'>
                             <div class="media-body">
-                              <h4 class="filename text-success">{{repoDetail.name}}</h4>
-                              <small class="text-muted">Goals application developed with Angular v1.7.4. Part of Moringa School course work.</small><br />
-                              <small class="text-muted">Last Updated: January 10, 2014 at 7:30am</small>
+                              <h4 class="filename text-success"><a href="">{{repoDetail.name}}</a></h4>
+                              <small class="last-update">Last Updated: <strong>{{repoDetail.updated_at|date}}</strong></small>
+                              <p class="description">{{repoDetail.description}}</p>
                             </div>
                         </div>                       
                     </div>                  

@@ -13,13 +13,15 @@ export class SearchGithubService {
 	newUserData :any = [];
 
   	constructor(private http: HttpClient) { 
-  		this.user = new User("",0,"","",new Date(),new Date());
-  		this.repository = new Repository("gitSearch","githubSearch");
+  		this.user = new User("",0,"","",new Date(),new Date(),"");
+  		this.repository = new Repository("","","",new Date());
   		
   		
   	}
 
 	getUserData(username: string){
+
+		this.repoData.length = 0;
 
 		interface ApiResponse{
 	        bio:string,
@@ -29,7 +31,8 @@ export class SearchGithubService {
 	        created_at:Date, 
 	        updated_at:Date,
 	        name:string,
-	        full_name:string,    
+	        full_name:string, 
+	        html_url:string   
 	    }
 
 	    let promise =new Promise((resolve,reject)=>{
@@ -41,6 +44,7 @@ export class SearchGithubService {
 	            this.user.public_repos=response.public_repos;
 	            this.user.created_at=response.created_at;
 	            this.user.updated_at=response.updated_at;
+	            this.user.html_url=response.html_url;
 
 	            resolve()
 	        },
@@ -49,11 +53,11 @@ export class SearchGithubService {
 	            }
 	        )
 
-	        this.http.get<ApiResponse>("https://api.github.com/users/" + username + "/repos").toPromise().then(response=>{
+	        this.http.get<any>("https://api.github.com/users/" + username + "/repos").toPromise().then(response=>{
 
 	        	for(var i=0; i<response.length; i++)
 	        	{
-	        		this.newUserData = new Repository(response[i].name,response[i].full_name);
+	        		this.newUserData = new Repository(response[i].name,response[i].full_name,response[i].description,response[i].updated_at);
 	        		this.repoData.push(this.newUserData);
 	        	}
 

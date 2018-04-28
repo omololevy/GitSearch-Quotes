@@ -1,15 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
 
 body {
-    font-family: 'Lato', sans-serif !important;
+    font-family: 'latoregular', sans-serif !important;
+    color: #212529;
 }
 
 .footer {
-	position: relative;
+	position: fixed; 
 	bottom: 0;
 	width: 100%;
 	text-align: center;
+	background-color: #fff;
+	margin-top: 50px;
 }
 .footer p {
 	font-size: 11px;
+	margin-bottom: 0px;
 }

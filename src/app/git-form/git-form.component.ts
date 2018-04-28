@@ -2,6 +2,7 @@ import { Component, OnInit,Output } from '@angular/core';
 import { SearchGithubService } from '../search-github.service';
 import { HttpClient } from '@angular/common/http';
 import { NgForm } from '@angular/forms';
+import { User } from '../user'
 
 @Component({
   selector: 'app-git-form',
@@ -10,6 +11,7 @@ import { NgForm } from '@angular/forms';
 })
 export class GitFormComponent implements OnInit {
 
+  user:User;
 	username: string;
 	searchGithubService:SearchGithubService;
 
