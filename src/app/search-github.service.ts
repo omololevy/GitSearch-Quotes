@@ -12,7 +12,8 @@ export class SearchGithubService {
 
   	constructor(private http: HttpClient) { 
   		this.user = new User("",0,"","",new Date(),new Date());
-  		this.repository = new Repository("");
+  		this.repository = new Repository("","");
+  		
   	}
 
 	getUserData(username: string){
@@ -24,7 +25,8 @@ export class SearchGithubService {
 	        avatar_url:string,
 	        created_at:Date, 
 	        updated_at:Date,
-	        name:string 	    
+	        name:string,
+	        full_name:string 	    
 	    }
 
 	    let promise =new Promise((resolve,reject)=>{
@@ -46,8 +48,15 @@ export class SearchGithubService {
 
 	        this.http.get<ApiResponse>("https://api.github.com/users/" + username + "/repos").toPromise().then(response=>{
 
-	        	this.repository=response;	            
-	            console.log(this.repository)
+	        	for(var i=0; i<response.length; i++)
+	        	{
+	        		this.repository.name=response[i].name;
+	        		this.repository.full_name=response[i].full_name;
+	        		console.log(this.repository.name,this.repository.full_name)
+	        	}
+
+	        	
+	        	// console.log(this.repository);
 
 	            resolve()
 	        },
