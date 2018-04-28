@@ -9,7 +9,7 @@ export class SearchGithubService {
 	user:User;
 
   	constructor(private http: HttpClient) { 
-  		this.user = new User("",0,"","",new Date());
+  		this.user = new User("",0,"","",new Date(),new Date());
   	}
 
 	getUserData(username: string){
@@ -19,7 +19,9 @@ export class SearchGithubService {
 	        public_repos:number,
 	        login:string,
 	        avatar_url:string,
-	        created_at:Date 	    }
+	        created_at:Date, 
+	        updated_at:Date 	    
+	    }
 
 	    let promise =new Promise((resolve,reject)=>{
 	        this.http.get<ApiResponse>("https://api.github.com/users/" + username).toPromise().then(response=>{
@@ -29,6 +31,7 @@ export class SearchGithubService {
 	            this.user.login=response.login;
 	            this.user.public_repos=response.public_repos;
 	            this.user.created_at=response.created_at;
+	            this.user.updated_at=response.updated_at;
 
 	            resolve()
 	        },
