@@ -2,14 +2,17 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { environment } from '../environments/environment'
 import { User } from './user';
+import { Repository } from './repository';
 
 @Injectable()
 export class SearchGithubService {
 
 	user:User;
+	repository:Repository;
 
   	constructor(private http: HttpClient) { 
   		this.user = new User("",0,"","",new Date(),new Date());
+  		this.repository = new Repository("");
   	}
 
 	getUserData(username: string){
@@ -20,7 +23,8 @@ export class SearchGithubService {
 	        login:string,
 	        avatar_url:string,
 	        created_at:Date, 
-	        updated_at:Date 	    
+	        updated_at:Date,
+	        name:string 	    
 	    }
 
 	    let promise =new Promise((resolve,reject)=>{
@@ -36,25 +40,14 @@ export class SearchGithubService {
 	            resolve()
 	        },
 	        error=>{
-	                // this.quote.quote="Never, never, never give up."
-	                // this.quote.author="winston churchill"
 	                reject(error)
 	            }
 	        )
-	    })
 
-	    return promise
-	}
+	        this.http.get<ApiResponse>("https://api.github.com/users/" + username + "/repos").toPromise().then(response=>{
 
-	getRepoData(username: string){
-
-		interface ApiResponse{	    
-	    }
-
-	    let promise =new Promise((resolve,reject)=>{
-	        this.http.get<ApiResponse>("https://api.github.com/users/" + username + "/repos").toPromise().then(repository=>{
-	            
-	            
+	        	this.repository=response;	            
+	            console.log(this.repository)
 
 	            resolve()
 	        },
@@ -68,5 +61,7 @@ export class SearchGithubService {
 
 	    return promise
 	}
+
+
 
 }
