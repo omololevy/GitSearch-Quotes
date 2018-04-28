@@ -1,0 +1,1 @@
+var myAPIkey = config.MY_API_KEY;

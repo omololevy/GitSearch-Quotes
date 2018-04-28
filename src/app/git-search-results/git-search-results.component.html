@@ -17,11 +17,10 @@
                 </div><!-- panel-heading -->
                 <div class="panel-body">
                     
-                    <div class="results-list">
-                        
-                        <div class="media">
+                    <div class="results-list">                        
+                        <div class="media" *ngFor='let repoDetail of repoDetails'>
                             <div class="media-body">
-                              <h4 class="filename text-primary">{{searchGithubService.repository.name}}</h4>
+                              <h4 class="filename text-success">{{repoDetail.name}}</h4>
                               <small class="text-muted">Goals application developed with Angular v1.7.4. Part of Moringa School course work.</small><br />
                               <small class="text-muted">Last Updated: January 10, 2014 at 7:30am</small>
                             </div>
