@@ -8,7 +8,11 @@
 }
 
 .profile h4 {
-	color: #007bff !important;
+	color: #1CAF9A !important;
+}
+
+.stat a {
+	color: #1CAF9A !important;
 }
 
 .profile img {
