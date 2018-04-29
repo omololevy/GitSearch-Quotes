@@ -1,4 +1,4 @@
-import { Component, OnInit,Output } from '@angular/core';
+import { Component, OnInit,Output,EventEmitter } from '@angular/core';
 import { SearchGithubService } from '../search-github.service';
 import { HttpClient } from '@angular/common/http';
 import { NgForm } from '@angular/forms';
@@ -15,10 +15,18 @@ export class GitSearchResultsComponent implements OnInit {
     user:User;
     repoDetails = [];
     searchGithubService:SearchGithubService;
-    public showData = false;
+    hideInput:boolean;
+
 
   	constructor(searchGithubService:SearchGithubService) { 
       this.searchGithubService = searchGithubService;
+    }
+
+    @Output() toggleBack = new EventEmitter();
+
+    goBack(){
+      this.hideInput = true;
+      this.toggleBack.emit(this.hideInput);
     }
 
   	ngOnInit() {

@@ -16,4 +16,4 @@
 	</div>
 	<div class="col-md-2"></div>	
 </div>
-<app-git-search-results *ngIf="showData"></app-git-search-results>
+<app-git-search-results *ngIf="showData" (toggleBack)="showUserInput($event)"></app-git-search-results>

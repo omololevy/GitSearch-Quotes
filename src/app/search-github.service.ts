@@ -24,8 +24,6 @@ export class SearchGithubService {
 	getUserData(username: string){
 
 		this.repoData.length = 0;
-		this.showInput = false;
-		this.showData = true;
 
 		interface ApiResponse{
 	        bio:string,

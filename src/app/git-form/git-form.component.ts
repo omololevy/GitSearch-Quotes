@@ -20,15 +20,20 @@ export class GitFormComponent implements OnInit {
 
 	submitUsername() {
 		this.searchGithubService.getUserData(this.username);
-    this.showInput = this.searchGithubService.showInput;
-    this.showData = this.searchGithubService.showData;
+    this.showInput = false;
+    this.showData = true;
 	}
 
-  	constructor(searchGithubService:SearchGithubService) { 
-  		this.searchGithubService = searchGithubService;
-  	}
+  showUserInput(hideInput) {
+    this.showInput = hideInput;
+    this.showData = false;
+  }
 
-  	ngOnInit() {
-  	}
+	constructor(searchGithubService:SearchGithubService) { 
+		this.searchGithubService = searchGithubService;
+	}
+
+	ngOnInit() {
+	}
 
 }

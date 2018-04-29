@@ -1,8 +1,5 @@
 
 <div class="row mb50 mt100">
-  <!-- <div id="preloader">
-      <div id="status"><i class="fa fa-spinner fa-spin"></i></div>
-  </div> -->
 	<div class="col-md-1"></div>
   <div class="col-md-3 profile">
     <h4>{{user.login}}</h4>
@@ -14,7 +11,7 @@
     <p class="stat"><i class="fa fa-github-alt" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;<a href="{{user.html_url}}" target="_blank">View Github Profile</a></p>
   </div>
 	<div class="col-md-5">
-    <a class="btn btn-default btn-xs" href="">Go Back</a>
+    <a class="btn btn-default btn-xs" (click)="goBack()" >Go Back</a>
     <hr>
 		 <div class="panel panel-default" >
                 <div class="panel-heading">
