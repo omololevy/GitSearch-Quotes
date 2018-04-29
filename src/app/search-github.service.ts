@@ -11,10 +11,12 @@ export class SearchGithubService {
 	repository:Repository;
 	repoData = [];
 	newUserData :any = [];
+	showInput:boolean;
+	showData:boolean;
 
   	constructor(private http: HttpClient) { 
   		this.user = new User("",0,"","",new Date(),new Date(),"");
-  		this.repository = new Repository("","","",new Date());
+  		this.repository = new Repository("","","",new Date(),"");
   		
   		
   	}
@@ -22,6 +24,8 @@ export class SearchGithubService {
 	getUserData(username: string){
 
 		this.repoData.length = 0;
+		this.showInput = false;
+		this.showData = true;
 
 		interface ApiResponse{
 	        bio:string,
@@ -57,7 +61,7 @@ export class SearchGithubService {
 
 	        	for(var i=0; i<response.length; i++)
 	        	{
-	        		this.newUserData = new Repository(response[i].name,response[i].full_name,response[i].description,response[i].updated_at);
+	        		this.newUserData = new Repository(response[i].name,response[i].full_name,response[i].description,response[i].updated_at,response[i].html_url);
 	        		this.repoData.push(this.newUserData);
 	        	}
 

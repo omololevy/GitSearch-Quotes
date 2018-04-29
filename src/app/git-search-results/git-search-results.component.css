@@ -17,11 +17,20 @@
 }
 
 .git-results .last-update {
-	font-size: 12px;
+	font-size: 11px;
 }
 
 .git-results p {
 	margin-bottom: 0px;
+	font-size: 13px;
+}
+
+
+
+.btn-default {
+    background: #e4e7ea;
+    border-color: #ccc;
+    color: #636e7b;
 }
 
 
