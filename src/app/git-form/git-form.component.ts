@@ -14,10 +14,14 @@ export class GitFormComponent implements OnInit {
   user:User;
 	username: string;
 	searchGithubService:SearchGithubService;
+  public showInput = true;
+  public showData = false;
 
 
 	submitUsername() {
 		this.searchGithubService.getUserData(this.username);
+    this.showInput = this.searchGithubService.showInput;
+    this.showData = this.searchGithubService.showData;
 	}
 
   	constructor(searchGithubService:SearchGithubService) { 

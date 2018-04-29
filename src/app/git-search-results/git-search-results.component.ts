@@ -15,6 +15,7 @@ export class GitSearchResultsComponent implements OnInit {
     user:User;
     repoDetails = [];
     searchGithubService:SearchGithubService;
+    public showData = false;
 
   	constructor(searchGithubService:SearchGithubService) { 
       this.searchGithubService = searchGithubService;

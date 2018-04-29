@@ -11,6 +11,10 @@
 	margin-bottom:50px;
 }
 
+.mt100 {
+	margin-top: 100px;
+}
+
 .profile h4, .git-results h4 {
 	color: #1CAF9A !important;
 	margin-bottom: 0;
