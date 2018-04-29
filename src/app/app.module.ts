@@ -11,16 +11,19 @@ import { GitFormComponent } from './git-form/git-form.component';
 import { GitSearchResultsComponent } from './git-search-results/git-search-results.component';
 import { SearchGithubService } from './search-github.service';
 import { DateFormatPipe } from './date-format.pipe';
+import { RepoFormComponent } from './repo-form/repo-form.component';
 
 const routes:Routes=[
-  {path:"gitUser",component:GitFormComponent}
+  {path:"gitUser",component:GitFormComponent},
+  {path:"gitRepo",component:RepoFormComponent}
 ]
 @NgModule({
   declarations: [
     AppComponent,
     GitFormComponent,
     GitSearchResultsComponent,
-    DateFormatPipe
+    DateFormatPipe,
+    RepoFormComponent
   ],
   imports: [
     BrowserModule,
