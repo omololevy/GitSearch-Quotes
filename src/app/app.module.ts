@@ -13,7 +13,7 @@ import { SearchGithubService } from './search-github.service';
 import { DateFormatPipe } from './date-format.pipe';
 
 const routes:Routes=[
-  {path:"search_page",component:GitFormComponent}
+  {path:"gitUser",component:GitFormComponent}
 ]
 @NgModule({
   declarations: [
