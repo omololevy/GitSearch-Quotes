@@ -10,4 +10,3 @@ export const environment = {
   client_id:'0b4029bfecb3d89eebb8',
   client_secret:'df9c0c7e9685524cbfa2aa7ebc5c11d9779d2d96'
 };
-hjgbdsf
