@@ -6,7 +6,7 @@
 export const environment = {
   production: false,
   apiUrl:"https://api.github.com/users/YomZsamora",
-  apiKey:'1886ce152949944ed6babd6dadc0a59897c9801a'
+  apiKey:'1886ce152949944ed6babd6dadc0a59897c9801a',
+  client_id:'0b4029bfecb3d89eebb8',
+  client_secret:'df9c0c7e9685524cbfa2aa7ebc5c11d9779d2d96'
 };
-
-
