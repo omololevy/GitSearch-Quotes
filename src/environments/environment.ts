@@ -5,5 +5,6 @@
 
 export const environment = {
   production: false,
-  apiUrl:"https://api.github.com/users/YomZsamora"
+  apiUrl:"https://api.github.com/users/YomZsamora",
+  apiKey:'1886ce152949944ed6babd6dadc0a59897c9801a'
 };

@@ -2,11 +2,11 @@
 	<div class="col-md-2"></div>
 	<div class="col-md-8 git-form">
 		<img class="mb15" src="./assets/images/logo.png">
-		<form name="gitForm">
+		<form (ngSubmit)='submitRepository()' #repoForm='ngForm' name="repoForm">
 			<div class="row">
 				<div class="col-md-3"></div>
 				<div class="col-md-6">
-					<input type="text" class="form-control input-lg mb15" id="Reponame" [(ngModel)]="Reponame" name="Reponame" autocomplete="off" placeholder="Search Repositories...">
+					<input type="text" class="form-control input-lg mb15" id="repo" [(ngModel)]="repo" name="repo" autocomplete="off" placeholder="Search Repositories...">
 					<button type="submit" class="btn btn-success btn-lg btn-block">Search Repository</button>
 				</div>
 				<div class="col-md-3"></div>

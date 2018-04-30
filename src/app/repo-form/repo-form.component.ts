@@ -1,4 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Output } from '@angular/core';
+import { SearchGithubService } from '../search-github.service';
+import { HttpClient } from '@angular/common/http';
+import { NgForm } from '@angular/forms';
+import { Repository } from '../repository';
 
 @Component({
   selector: 'app-repo-form',
@@ -7,9 +11,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RepoFormComponent implements OnInit {
 
-  constructor() { }
+	repository:Repository;
+	repo: string;
+	searchGithubService:SearchGithubService;
 
-  ngOnInit() {
-  }
+  	submitRepository() {
+		this.searchGithubService.getRepoData(this.repo);
+	}
+
+
+	constructor(searchGithubService:SearchGithubService) { 
+		this.searchGithubService = searchGithubService;
+	}
+
+  	ngOnInit() {}
 
 }
