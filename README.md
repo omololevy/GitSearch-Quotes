@@ -1,26 +1,17 @@
-# GithubSearch
+# GitSearch
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
+GitSearch is simply an Angular App that uses Github API to retrieve user data. Submit a username and it gives you repository details of the user, including number of repositories, commits and branches and also when it was last updated.
 
-## Development server
+## Requirements
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Both the CLI and th eproject have dependecies that require Node together with NPM. So make sure you have these installed and working before proceeding.
 
-## Code scaffolding
+##### Installation
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+- Clone this repository to a location in your file system.
+- Open terminal command line then navigate to the root folder of the application.
+- Run `ng serve` command.
+- Navigate to `http://localhost:4200/` in your browser.
 
 ## Further help
 

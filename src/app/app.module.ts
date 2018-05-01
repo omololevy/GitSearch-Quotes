@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
+
 import { AppComponent } from './app.component';
 import { GitRoutingModule } from './git-routing.module';
 
@@ -14,20 +15,20 @@ import { RepoFormComponent } from './repo-form/repo-form.component';
 
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    GitFormComponent,
-    GitSearchResultsComponent,
-    DateFormatPipe,
-    RepoFormComponent
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    HttpClientModule,
-    GitRoutingModule
-  ],
-  providers: [SearchGithubService],
-  bootstrap: [AppComponent]
+   declarations: [
+      AppComponent,
+      GitFormComponent,
+      GitSearchResultsComponent,
+      DateFormatPipe,
+      RepoFormComponent
+   ], 
+   imports: [
+      BrowserModule,
+      FormsModule,
+      HttpClientModule,
+      GitRoutingModule
+   ],
+   providers: [SearchGithubService],
+   bootstrap: [AppComponent]
 })
 export class AppModule { }

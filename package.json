@@ -26,6 +26,7 @@
     "angular-loader": "^1.6.10",
     "angular2-busy": "^2.0.4",
     "core-js": "^2.4.1",
+    "ng-http-loader": "^0.9.1",
     "rxjs": "^5.5.6",
     "zone.js": "^0.8.19"
   },
