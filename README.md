@@ -4,7 +4,7 @@ GitSearch is simply an Angular App that uses Github API to retrieve user data. S
 
 ## Requirements
 
-Both the CLI and th eproject have dependecies that require Node together with NPM. So make sure you have these installed and working before proceeding.
+Both the CLI and the project have dependecies that require Node together with NPM. So make sure you have these installed and working before proceeding.
 
 ##### Installation
 
