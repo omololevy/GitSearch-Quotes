@@ -1,7 +1,7 @@
 
 <div class="row mb50 mt100">
-	<div class="col-md-1"></div>
-  <div class="col-md-3 profile">
+<div class="col-md-1"></div>
+<div class="col-md-3 profile">
     <h4>{{user.login}}</h4>
     <img src="{{searchGithubService.user.avatar_url}}">
     <p class="bio">{{user.bio}}</p>
@@ -9,27 +9,27 @@
     <p class="stat">Last Update: <strong>{{user.updated_at|date}}</strong></p>
     <p class="stat">Number of Repos: <strong>{{user.public_repos}}</strong></p>
     <p class="stat"><i class="fa fa-github-alt" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;<a href="{{user.html_url}}" target="_blank">View Github Profile</a></p>
+</div>
+<div class="col-md-5">
+<a class="btn btn-default btn-xs" (click)="goBack()" >Go Back</a>
+<hr>
+ <div class="panel panel-default" >
+    <div class="panel-heading">
+        <h3 class="panel-title"></h3>
+    </div>
+    <div class="panel-body">                    
+        <div class="git-results">                        
+            <div class="media mb15" *ngFor='let repoDetail of repoDetails'>
+                <div class="media-body">
+                  <h4 class="filename text-success"><a href="{{repoDetail.html_url}}" target="_blank">{{repoDetail.name}}</a></h4>
+                  <small class="last-update">Last Updated: <strong>{{repoDetail.updated_at|date}}</strong></small>
+                  <p class="description">{{repoDetail.description}}</p>
+              </div>
+          </div>                       
+      </div>                  
   </div>
-	<div class="col-md-5">
-    <a class="btn btn-default btn-xs" (click)="goBack()" >Go Back</a>
-    <hr>
-		 <div class="panel panel-default" >
-                <div class="panel-heading">
-                    <h3 class="panel-title"></h3>
-                </div>
-                <div class="panel-body">                    
-                    <div class="git-results">                        
-                        <div class="media mb15" *ngFor='let repoDetail of repoDetails'>
-                            <div class="media-body">
-                              <h4 class="filename text-success"><a href="{{repoDetail.html_url}}" target="_blank">{{repoDetail.name}}</a></h4>
-                              <small class="last-update">Last Updated: <strong>{{repoDetail.updated_at|date}}</strong></small>
-                              <p class="description">{{repoDetail.description}}</p>
-                            </div>
-                        </div>                       
-                    </div>                  
-                </div>
-            </div>
-        </div>
+</div>
+</div>
 	<div class="col-md-1"></div>
 </div>
 

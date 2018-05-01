@@ -16,7 +16,7 @@ export class RepoFormComponent implements OnInit {
 	searchGithubService:SearchGithubService;
 
   	submitRepository() {
-		this.searchGithubService.getRepoData(this.repo);
+		
 	}
 
 
