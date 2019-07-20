@@ -66,3 +66,9 @@ If you'd like to request a new function, feel free to do so by opening an issue 
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+### License
+
+*MIT*
+Copyright (c) 2019 **Yommie Samora**
