@@ -61,12 +61,13 @@ If you find a bug (the website couldn't handle the query and / or gave undesired
 
 If you'd like to request a new function, feel free to do so by opening an issue here. Please include sample queries and their corresponding results.
 
-##### Link to Live Site : [https://yomzsamora.github.io/GitSearch/](https://yomzsamora.github.io/GitSearch/)
 
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
+
+##### Link to Live Site : [https://yomzsamora.github.io/GitSearch/](https://yomzsamora.github.io/GitSearch/)
 
 ### License
 
