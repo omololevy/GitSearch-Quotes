@@ -1,7 +1,7 @@
 
 <div class="row mb50 mt100">
 <div class="col-md-1"></div>
-<div class="col-md-3 profile">
+<div class="col-md-3 profile text-right">
     <h4>{{user.login}}</h4>
     <img src="{{searchGithubService.user.avatar_url}}">
     <p class="bio">{{user.bio}}</p>
@@ -17,11 +17,11 @@
     <div class="panel-heading">
         <h3 class="panel-title"></h3>
     </div>
-    <div class="panel-body">                    
+    <div class="panel-body repo-detail">                    
         <div class="git-results">                        
             <div class="media mb15" *ngFor='let repoDetail of repoDetails'>
                 <div class="media-body">
-                  <h4 class="filename text-success"><a href="{{repoDetail.html_url}}" target="_blank"><i class="fa fa-github" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;{{repoDetail.name}}</a></h4>
+                  <h4 class="filename text-success"><a href="{{repoDetail.html_url}}" target="_blank">{{repoDetail.name}}</a></h4>
                   <small class="last-update">Last Updated: <strong>{{repoDetail.updated_at|date}}</strong>&nbsp;&nbsp;|&nbsp;&nbsp;<i class="fa fa-clone" aria-hidden="true"></i>&nbsp;&nbsp;Clone:&nbsp;&nbsp;<strong appCloneHighlighter>{{repoDetail.clone_url}}</strong></small>
                   <p class="description">{{repoDetail.description}}</p>
               </div>

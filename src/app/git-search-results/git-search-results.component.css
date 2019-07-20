@@ -18,6 +18,8 @@
 .profile h4, .git-results h4 {
 	color: #1CAF9A !important;
 	margin-bottom: 0;
+	font-family: 'darker_grotesqueblack';
+	font-size: 35px;
 }
 
 .git-results .last-update {
@@ -26,10 +28,12 @@
 
 .git-results p {
 	margin-bottom: 0px;
-	font-size: 14px;
+	font-size: 17px;
 }
 
-
+.repo-detail small {
+	font-size: 14px !important;
+}
 
 .btn-default {
     background: #e4e7ea;
@@ -52,8 +56,12 @@ p.bio {
 }
 
 p.stat {
-	font-size: 11px;
+	font-size: 14px;
 	margin-bottom: 2px !important;
+}
+
+p.stat strong, small.last-update strong {
+	font-family: 'darker_grotesquebold';
 }
 
 .profile p {
