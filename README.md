@@ -8,10 +8,10 @@ Both the CLI and the project have dependecies that require Node together with NP
 
 ##### Technologies Used
 
-- HTML & CSS (Bootstrap)
 - This project was generated with Angular CLI version 7.1.4.
+- HTML & CSS (Bootstrap)
 
-##### Installation
+##### Setup Instructions and Installation
 
 - Clone this repository to a location in your file system.
 - Open terminal command line then navigate to the root folder of the application.
@@ -21,24 +21,24 @@ Both the CLI and the project have dependecies that require Node together with NP
 
 ## Behaviour Driven Development
 
-1. displays github info of a user when user name is entered
-   - INPUT:"user name entered"
-   - OUTPUT:Github information of a user
-2. displays all repositories of a user when show repositories button is pressed
-   - INPUT:"Show repositories button pressed
-   - OUTPUT:"All Github repositories of a user appear"
-3. displays an error message if you leave the name input field blank
-   - INPUT:" " 
-   - OUTPUT:"Name is required" 
-4. displays an error message if you leave the repo name input field blank
-   - INPUT:" " 
-   - OUTPUT:"Repo Name is required"
-5. displays an error message if the user name entered couldn't be found
-   - INPUT:"name "
-   - OUTPUT:"User with this name doesnot exist"
-6. displays an error message if the repo name entered couldn't be found
-   - INPUT:"repo name" 
-   - OUTPUT:"Repository of this name doesn't exist"
+1. Displays GitHub info of a user when user name is entered
+   - INPUT: "user name entered"
+   - OUTPUT: "Displays User Details"
+2. Displays all repositories of a user when show repositories button is pressed
+   - INPUT: "Show repositories button pressed
+   - OUTPUT: "Displays User Repo Details"
+3. Displays an error message if you leave the name input field blank
+   - INPUT: " " 
+   - OUTPUT: "Name's required" 
+4. Displays an error message if you leave the repo name input field blank
+   - INPUT: " " 
+   - OUTPUT: "Repo Name is required"
+5. Displays an error message if the user name entered couldn't be found
+   - INPUT: "username"
+   - OUTPUT: "User Doesn't Exist"
+6. Displays an error message if the repo name entered couldn't be found
+   - INPUT: "repository" 
+   - OUTPUT: "Repository Doesn't Exist"
 
 
 ## Development
@@ -61,8 +61,7 @@ If you find a bug (the website couldn't handle the query and / or gave undesired
 
 If you'd like to request a new function, feel free to do so by opening an issue here. Please include sample queries and their corresponding results.
 
-##### Link to Live Site
-Link to Site: [GitSearch](https://yomzsamora.github.io/GitSearch/)
+##### Link to Live Site : [GitSearch](https://yomzsamora.github.io/GitSearch/)
 
 ## Further help
 
