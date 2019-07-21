@@ -45,23 +45,23 @@ Both the CLI and the project have dependecies that require Node together with NP
 ##### Quotes
 
 1. Displays an error message if you leave the quote input field blank
-   - INPUT:" " 
-   - OUTPUT:"Enter the quote" 
+   - INPUT: " " 
+   - OUTPUT: "Enter the quote" 
 2. Displays an error message if you leave the author field blank
-   - INPUT:" " 
-   - OUTPUT:"Enter the name of the author"
+   - INPUT: " " 
+   - OUTPUT: "Enter the name of the author"
 3. Displays an error message if you leave the name input field blank
-   - INPUT:" "
-   - OUTPUT:"Enter the name of the publisher or your name"
+   - INPUT: " "
+   - OUTPUT: "Enter the name of the publisher or your name"
 4. Displays an option to delete a quote
-   - INPUT:"Delete button of a quote pressed" 
-   - OUTPUT:"That particular quote from a list of quotes is deleted"
-5. Display an option to upVote a quote if you like it
-   - INPUT:"Press upVote Button"
-   - OUTPUT:upVote property of a quote increments by 1 on the screen" 
-6. Display an option to deVote a quote if you dislike it
-   - INPUT:"Press downVote Button"
-   - OUTPUT:downVote property of a quote increments by 1 on the screen" 
+   - INPUT: "Delete button of a quote pressed" 
+   - OUTPUT: "That particular quote from a list of quotes is deleted"
+5. Display an option to UpVote a quote if you like it
+   - INPUT: "Press INSPIRATIONAL Button"
+   - OUTPUT: "UpVote property of a quote increments by 1" 
+6. Display an option to DownVote a quote if you dislike it
+   - INPUT: "Press TERRIBLE Button"
+   - OUTPUT: "DownVote property of a quote increments by 1" 
 
 
 ## Development
