@@ -1,0 +1,14 @@
+<div class="row">
+<div class="col-md-1"></div>
+<div class="col-md-3"><app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form><!-- Displays the form input from quote-form component -->
+</div>
+<div class="col-md-1"></div>
+<div class="col-md-5 displayed-quote">
+	<div class="quote-group mb30" *ngFor='let quote of quotes;let i = index; let a = index;'>
+	 	<p class="uploaded-quotes">"{{quote.quoted}}" <br><span class="fnt14">Author - {{quote.author}},&nbsp;&nbsp;Publisher - {{quote.publisher}}</span> <br> <span class="date">Uploaded {{quote.dateCreated}} minutes ago.</span></p>
+		<a class="btn btn-danger-alt btn-xs" (click) = 'downvote(i)'><strong>TERRIBLE</strong>&nbsp;&nbsp;<i class="fa fa-thumbs-down"></i> </a>&nbsp;&nbsp;<a class="btn btn-success-alt btn-xs mr10" (click) = 'upvote(a)'><strong>INSPIRATIONAL</strong>&nbsp;&nbsp;<i class="fa fa-thumbs-up"></i></a>&nbsp;&nbsp;<a class="btn btn-danger btn-xs pull-right" (click) = 'deleteQuote(true)'>DELETE THIS QUOTE&nbsp;&nbsp;<i class="fa fa-trash"></i></a>
+		<p class="noOfVotes">No of Votes: <strong>{{quote.noOfVotes}}</strong>&nbsp;&nbsp;<span class="label label-success voted-best" *ngIf='quote.noOfVotes > 8'>Voted Best</span></p>
+		<hr>
+	</div>
+</div>
+</div>

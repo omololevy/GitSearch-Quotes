@@ -11,9 +11,12 @@ import { GitFormComponent } from './git-form/git-form.component';
 import { GitSearchResultsComponent } from './git-search-results/git-search-results.component';
 import { SearchGithubService } from './search-github.service';
 import { DateFormatPipe } from './date-format.pipe';
-import { RepoFormComponent } from './repo-form/repo-form.component';
 import { CloneHighlighterDirective } from './clone-highlighter.directive';
 import { DaysCountPipe } from './days-count.pipe';
+import { QuotesComponent } from './quotes/quotes.component';
+import { DisplayedQuoteComponent } from './displayed-quote/displayed-quote.component';
+import { QuoteDetailsComponent } from './quote-details/quote-details.component';
+import { QuoteFormComponent } from './quote-form/quote-form.component';
 
 
 @NgModule({
@@ -22,9 +25,12 @@ import { DaysCountPipe } from './days-count.pipe';
       GitFormComponent,
       GitSearchResultsComponent,
       DateFormatPipe,
-      RepoFormComponent,
       CloneHighlighterDirective,
-      DaysCountPipe
+      DaysCountPipe,
+      QuotesComponent,
+      DisplayedQuoteComponent,
+      QuoteDetailsComponent,
+      QuoteFormComponent
    ], 
    imports: [
       BrowserModule,

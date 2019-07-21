@@ -4,12 +4,12 @@ import { RouterModule, Routes } from '@angular/router';
 
 
 import { GitFormComponent } from './git-form/git-form.component';
-import { RepoFormComponent } from './repo-form/repo-form.component';
+import { QuotesComponent } from './quotes/quotes.component';
 
 
 const routes:Routes = [
 { path:"gitUser",component:GitFormComponent },
-{ path:"gitRepo",component:RepoFormComponent }
+{ path:"quotes",component:QuotesComponent }
 ]
 
 

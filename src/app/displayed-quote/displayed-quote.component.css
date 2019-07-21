@@ -1,0 +1,15 @@
+p.uploaded-quotes {
+	color: #636e7b;
+	font-size:20px;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	margin-bottom: 5px;
+	line-height: 1em;
+}
+
+.fnt14 {
+	font-size: 14px;
+}
+
+span.date {
+	font-size: 13px;
+}

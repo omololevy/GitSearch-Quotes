@@ -1,0 +1,142 @@
+
+
+body {
+    font-family: 'darker_grotesqueregular', sans-serif;
+}
+
+h1 {
+    font-family: 'darker_grotesquebold', sans-serif;
+    font-size: 56px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-weight: 500;
+    color: #636e7b;
+}
+
+.quote-input p {
+	color: #636e7b;
+	font-size: 26px;
+}
+
+.label-success {
+    background-color: #1CAF9A;
+}
+
+p.uploaded-quotes {
+	color: #636e7b;
+	font-size:20px;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	margin-bottom: 5px;
+	line-height: 1em;
+}
+
+p.noOfVotes {
+	margin-top: 1px;
+	margin-bottom: 5px;
+	font-size: 12px;
+	padding-left: 10px;
+	color: #636e7b;
+}
+
+p .voted-best {
+	font-size: 11px;
+}
+
+.btn-lg {
+    padding: 12px 20px;
+}
+
+.displayed-quote a {
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	letter-spacing: 1px;
+	font-size: 15px;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+.btn-danger-alt {
+    border:none;
+    color: #D9534F;
+    text-transform: uppercase;
+    font-family: 'LatoBold';
+    font-size: 12px;
+}
+
+.btn-success-alt {
+    border: none;
+    color: #1CAF9A;
+    text-transform: uppercase;
+    font-family: 'LatoBold';
+    font-size: 12px;
+}
+
+.btn-xs {
+    padding: 2px 10px;
+}
+
+.btn-success {
+    background-color: #1CAF9A;
+    border-color: #17a08c;
+}
+
+.mb5 {
+    margin-bottom: 5px;
+}
+
+.mb10 {
+    margin-bottom: 10px;
+}
+
+.mb15 {
+    margin-bottom: 15px;
+}
+
+.mb20 {
+    margin-bottom: 20px;
+}
+
+.mb30 {
+    margin-bottom: 30px;
+}
+
+.mb40 {
+    margin-bottom: 40px;
+}
+
+.mr5 {
+    margin-right: 5px;
+}
+
+.mr10 {
+    margin-right: 10px;
+}
+
+.mr20 {
+    margin-right: 20px;
+}
+
+.mr30 {
+    margin-right: 30px;
+}
+
+.mt5 {
+    margin-top: 5px;
+}
+
+.mt10 {
+    margin-top: 10px;
+}
+
+.mt30 {
+    margin-top: 30px;
+}
+
+.nomargin {
+    margin: 0;
+}
+
+
+

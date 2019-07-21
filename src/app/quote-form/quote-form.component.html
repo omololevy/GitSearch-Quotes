@@ -1,0 +1,17 @@
+<div class="col-md-12">
+	<div class="quote-input">
+		<form (ngSubmit)='submitQuote()' #quoteForm='ngForm' name="quoteForm">
+			<p>Please add a <strong>quote</strong> here:</p>
+			<input type="text" autocomplete="off" placeholder="Your Name" class="form-control mb10" id="author" [(ngModel)]="quoteAuthor" name="author" >
+			<input type="text" autocomplete="off" placeholder="Publisher" class="form-control mb10" id="publisher" [(ngModel)]="quotePublisher" name="publisher" >
+			<textarea type="text" placeholder="Quote Here..." class="form-control mb10" id="quotes" [(ngModel)]="myQuote" name="quotes" ></textarea>
+			<button type="submit" class="btn btn-success btn-block btn-lg">SUBMIT</button>
+			<hr>
+			<div class="display">
+				<p class="author mb0"><span>Author:</span> {{quoteAuthor}}</p>
+				<p class="author mb0"><span>Publisher:</span> {{quotePublisher}}</p>
+				<p class="">" {{myQuote}} "</p>				
+			</div>
+		</form>		
+	</div>
+</div>
