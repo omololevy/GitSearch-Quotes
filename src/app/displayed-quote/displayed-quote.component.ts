@@ -1,5 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { MyQuote } from '../my-quote';
+import { Component, OnInit, Input } from '@angular/core'; //  Import for Input from @angular/core which allows us to do Input property binding.
+import { MyQuote } from '../my-quote'; // Imported the MyQuote blueprint class in src/app/my-quote.ts
 
 @Component({
   selector: 'app-displayed-quote',
@@ -11,6 +11,7 @@ export class DisplayedQuoteComponent implements OnInit {
 
   	constructor() { }
 
+  	// ngOnInit is a lifecycle hook. It is called each time the component is created.
 	ngOnInit() {
 	}
 

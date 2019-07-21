@@ -1,16 +1,16 @@
 <div class="col-md-12">
 	<div class="quote-input">
-		<form (ngSubmit)='submitQuote()' #quoteForm='ngForm' name="quoteForm">
+		<form (ngSubmit)='submitQuote()' #quoteForm='ngForm' name="quoteForm"><!-- Calls the submitQuote() Function in quote-form.component.ts that takes the inputs and creates a new User Instance  -->
 			<p>Please add a <strong>quote</strong> here:</p>
-			<input type="text" autocomplete="off" placeholder="Your Name" class="form-control mb10" id="author" [(ngModel)]="quoteAuthor" name="author" >
-			<input type="text" autocomplete="off" placeholder="Publisher" class="form-control mb10" id="publisher" [(ngModel)]="quotePublisher" name="publisher" >
-			<textarea type="text" placeholder="Quote Here..." class="form-control mb10" id="quotes" [(ngModel)]="myQuote" name="quotes" ></textarea>
-			<button type="submit" class="btn btn-success btn-block btn-lg">SUBMIT</button>
+			<input type="text" autocomplete="off" placeholder="Your Name" class="form-control mb10" id="author" [(ngModel)]="quoteAuthor" name="author" ><!-- author input -->
+			<input type="text" autocomplete="off" placeholder="Publisher" class="form-control mb10" id="publisher" [(ngModel)]="quotePublisher" name="publisher" ><!-- publisher input -->
+			<textarea type="text" placeholder="Quote Here..." class="form-control mb10" id="quotes" [(ngModel)]="myQuote" name="quotes" ></textarea><!-- quotes textarea -->
+			<button type="submit" class="btn btn-success btn-block btn-lg">SUBMIT</button><!-- On Submit of this Form the submitQuote() function is called -->
 			<hr>
 			<div class="display">
-				<p class="author mb0"><span>Author:</span> {{quoteAuthor}}</p>
-				<p class="author mb0"><span>Publisher:</span> {{quotePublisher}}</p>
-				<p class="">" {{myQuote}} "</p>				
+				<p class="author mb0"><span>Author:</span> {{quoteAuthor}}</p> <!-- Renders In Real-Time Form Inputs -->
+				<p class="author mb0"><span>Publisher:</span> {{quotePublisher}}</p><!-- Renders In Real-Time Form Inputs -->
+				<p class="">" {{myQuote}} "</p>	<!-- Renders In Real-Time Form Inputs -->
 			</div>
 		</form>		
 	</div>

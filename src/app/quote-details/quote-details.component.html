@@ -4,10 +4,13 @@
 </div>
 <div class="col-md-1"></div>
 <div class="col-md-5 displayed-quote">
-	<div class="quote-group mb30" *ngFor='let quote of quotes;let i = index; let a = index;'>
+	<div class="quote-group mb30" *ngFor='let quote of quotes;let i = index; let a = index;'> <!-- Loop through quotes on the quotes array -->
 	 	<p class="uploaded-quotes">"{{quote.quoted}}" <br><span class="fnt14">Author - {{quote.author}},&nbsp;&nbsp;Publisher - {{quote.publisher}}</span> <br> <span class="date">Uploaded {{quote.dateCreated|timeAgo}}.</span></p>
-		<a class="btn btn-danger-alt btn-xs" (click) = 'downvote(i)' (click)='calculateHighestVotes()'><strong>TERRIBLE</strong>&nbsp;&nbsp;<i class="fa fa-thumbs-down"></i> </a>&nbsp;&nbsp;<a class="btn btn-success-alt btn-xs mr10" (click) = 'upvote(a)' (click)='calculateHighestVotes()'><strong>INSPIRATIONAL</strong>&nbsp;&nbsp;<i class="fa fa-thumbs-up"></i></a>&nbsp;&nbsp;<a class="btn btn-danger btn-xs pull-right" (click) = 'deleteQuote(true)'>DELETE THIS QUOTE&nbsp;&nbsp;<i class="fa fa-trash"></i></a>
-		<p class="noOfVotes">No of Votes: <strong>{{quote.noOfVotes}}</strong>&nbsp;&nbsp;<br><span class="label label-success voted-best" *ngIf='i == highestQuote;'>Voted Best</span></p>
+		<a class="btn btn-danger-alt btn-xs" (click) = 'downvote(i)' (click)='calculateHighestVotes()'><strong>TERRIBLE</strong>&nbsp;&nbsp;<i class="fa fa-thumbs-down"></i> </a>&nbsp;&nbsp; <!-- Calls the downvote() in the quote-details.component.ts that decrements the noOfVotes value and also calls the calculateHighestVotes() that checks quote with highestVote-->
+		<a class="btn btn-success-alt btn-xs mr10" (click) = 'upvote(a)' (click)='calculateHighestVotes()'><strong>INSPIRATIONAL</strong>&nbsp;&nbsp;<i class="fa fa-thumbs-up"></i></a>&nbsp;&nbsp;<a class="btn btn-danger btn-xs pull-right" (click) = 'deleteQuote(true)'>DELETE THIS QUOTE&nbsp;&nbsp;<i class="fa fa-trash"></i></a><!-- Calls the upvote() in the quote-details.component.ts that increments the noOfVotes value and also calls the calculateHighestVotes() that checks quote with highestVote-->
+		<p class="noOfVotes">No of Votes: <strong>{{quote.noOfVotes}}</strong>&nbsp;&nbsp;<br> <!-- Displays the noOfVotes -->
+			<span class="label label-success voted-best" *ngIf='i == highestQuote && quote.noOfVotes > 0;'>Voted Best</span> <!-- Displayed only for the quote with the highestVote -->
+		</p> 
 		<hr>
 	</div>
 </div>
