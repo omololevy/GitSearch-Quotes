@@ -11,6 +11,8 @@ body {
 
 .label-success {
     background-color: #1CAF9A;
+    padding: 0px 5px;
+    color: #ffffff;
 }
 
 p.uploaded-quotes {
@@ -30,7 +32,9 @@ p.noOfVotes {
 }
 
 p .voted-best {
-	font-size: 11px;
+	font-size: 15px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    text-transform: uppercase;
 }
 
 .btn-lg {

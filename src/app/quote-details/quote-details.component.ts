@@ -9,11 +9,20 @@ import { MyQuote } from '../my-quote';
 export class QuoteDetailsComponent implements OnInit {
 	@Input() quote:MyQuote;
 
+  highestVotes: number = 0;
+  highestQuote: number = 0;
 	quotes = [
     new MyQuote(1, 'Samora', 'Winter is Coming!', 'Jon Snow', 3, new Date()),
   ]
 
-  
+    calculateHighestVotes() {
+    for (var i = 0; i < this.quotes.length; i++) {
+      if (this.quotes[i].noOfVotes > this.highestVotes) {
+        this.highestVotes = this.quotes[i].noOfVotes;
+        this.highestQuote = i;
+      }
+    }
+  }
 
   	addNewQuote(myQuote) {
   		this.quotes.push(myQuote);
