@@ -1,6 +1,6 @@
-# GitSearch
+# GitSearch-Quotes
 
-GitSearch is simply an Angular App that uses Github API to retrieve user data. Submit a username and it gives you repository details of the user, including number of repositories, commits and branches and also when it was last updated.
+GitSearch-Quotes is simply an Angular App that uses Github API to retrieve user data. Submit a username and it gives you repository details of the user, including number of repositories, commits and branches and also when it was last updated. It also has a quotes platform where you can add your favorite quotes in it. It includes a button to delete a quote that you don't find appropriate. You can also upvote or devote a quote based on your personal opinion about it. A quote with most likes will be highlighted. It will also give you the time since the quote has been created.
 
 ## Requirements
 
@@ -21,6 +21,8 @@ Both the CLI and the project have dependecies that require Node together with NP
 
 ## Behaviour Driven Development
 
+##### GitSearch
+
 1. Displays GitHub info of a user when user name is entered
    - INPUT: "user name entered"
    - OUTPUT: "Displays User Details"
@@ -39,6 +41,27 @@ Both the CLI and the project have dependecies that require Node together with NP
 6. Displays an error message if the repo name entered couldn't be found
    - INPUT: "repository" 
    - OUTPUT: "Repository Doesn't Exist"
+
+##### Quotes
+
+1. Displays an error message if you leave the quote input field blank
+   - INPUT:" " 
+   - OUTPUT:"Enter the quote" 
+2. Displays an error message if you leave the author field blank
+   - INPUT:" " 
+   - OUTPUT:"Enter the name of the author"
+3. Displays an error message if you leave the name input field blank
+   - INPUT:" "
+   - OUTPUT:"Enter the name of the publisher or your name"
+4. Displays an option to delete a quote
+   - INPUT:"Delete button of a quote pressed" 
+   - OUTPUT:"That particular quote from a list of quotes is deleted"
+5. Display an option to upVote a quote if you like it
+   - INPUT:"Press upVote Button"
+   - OUTPUT:upVote property of a quote increments by 1 on the screen" 
+6. Display an option to deVote a quote if you dislike it
+   - INPUT:"Press downVote Button"
+   - OUTPUT:downVote property of a quote increments by 1 on the screen" 
 
 
 ## Development
