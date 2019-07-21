@@ -61,7 +61,7 @@ p .voted-best {
     border:none;
     color: #D9534F;
     text-transform: uppercase;
-    font-family: 'LatoBold';
+    font-family: 'darker_grotesquebold';
     font-size: 12px;
 }
 
@@ -69,7 +69,7 @@ p .voted-best {
     border: none;
     color: #1CAF9A;
     text-transform: uppercase;
-    font-family: 'LatoBold';
+    font-family: 'darker_grotesquebold';
     font-size: 12px;
 }
 

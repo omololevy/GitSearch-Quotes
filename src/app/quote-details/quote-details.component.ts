@@ -9,7 +9,11 @@ import { MyQuote } from '../my-quote';
 export class QuoteDetailsComponent implements OnInit {
 	@Input() quote:MyQuote;
 
-	quotes = []
+	quotes = [
+    new MyQuote(1, 'Samora', 'Winter is Coming!', 'Jon Snow', 3, new Date()),
+  ]
+
+  
 
   	addNewQuote(myQuote) {
   		this.quotes.push(myQuote);

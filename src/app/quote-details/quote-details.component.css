@@ -41,7 +41,9 @@ a.btn {
 	font-family: 'Yanone Kaffeesatz', sans-serif;
 	letter-spacing: 1px;
 	font-size: 15px;
+    color: #ffffff;
 }
+
 
 .btn-block {
     display: block;
@@ -50,17 +52,17 @@ a.btn {
 
 .btn-danger-alt {
     border:none;
-    color: #D9534F;
+    color: #D9534F !important;
     text-transform: uppercase;
-    font-family: 'LatoBold';
+    font-family: 'Yanone Kaffeesatz' !important;
     font-size: 12px;
 }
 
 .btn-success-alt {
     border: none;
-    color: #1CAF9A;
+    color: #1CAF9A !important;
     text-transform: uppercase;
-    font-family: 'LatoBold';
+    font-family: 'Yanone Kaffeesatz' !important;
     font-size: 12px;
 }
 

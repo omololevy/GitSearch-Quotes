@@ -17,6 +17,7 @@ import { QuotesComponent } from './quotes/quotes.component';
 import { DisplayedQuoteComponent } from './displayed-quote/displayed-quote.component';
 import { QuoteDetailsComponent } from './quote-details/quote-details.component';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
+import { TimeAgoPipe } from 'time-ago-pipe';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { QuoteFormComponent } from './quote-form/quote-form.component';
       QuotesComponent,
       DisplayedQuoteComponent,
       QuoteDetailsComponent,
-      QuoteFormComponent
+      QuoteFormComponent,
+      TimeAgoPipe
    ], 
    imports: [
       BrowserModule,
