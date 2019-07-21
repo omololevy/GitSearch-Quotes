@@ -18,7 +18,7 @@ export class SearchGithubService {
 
   	constructor(private http: HttpClient) { 
   		this.user = new User("",0,"","",new Date(),new Date(),"");
-  		this.repository = new Repository("","","",new Date(),"",""); 		
+  		this.repository = new Repository("","","",new Date(),"","","",new Date()); 		
   	}
 
 	getUserData(username: string){
@@ -59,7 +59,7 @@ export class SearchGithubService {
 
 	        	for(var i=0; i<response.length; i++)
 	        	{
-	        		this.newUserData = new Repository(response[i].name,response[i].full_name,response[i].description,response[i].updated_at,response[i].html_url,response[i].clone_url);
+	        		this.newUserData = new Repository(response[i].name,response[i].full_name,response[i].description,response[i].updated_at,response[i].html_url,response[i].clone_url,response[i].language,response[i].created_at);
 	        		this.repoData.push(this.newUserData);
 	        	}
 

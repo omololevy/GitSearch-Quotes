@@ -1,7 +1,7 @@
 
 <div class="row mb50 mt100">
 <div class="col-md-1"></div>
-<div class="col-md-3 profile text-right">
+<div class="col-md-4 profile text-right">
     <h4>{{user.login}}</h4>
     <img src="{{searchGithubService.user.avatar_url}}">
     <p class="bio">{{user.bio}}</p>
@@ -10,6 +10,7 @@
     <p class="stat">Number of Repos: <strong>{{user.public_repos}}</strong></p>
     <p class="stat"><i class="fa fa-github-alt" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;<a href="{{user.html_url}}" target="_blank">View Github Profile</a></p>
 </div>
+<div class="col-md-3"></div>
 <div class="col-md-5">
 <a class="btn btn-default btn-xs" (click)="goBack()" >Go Back</a>
 <hr>
@@ -22,8 +23,9 @@
             <div class="media mb15" *ngFor='let repoDetail of repoDetails'>
                 <div class="media-body">
                   <h4 class="filename text-success"><a href="{{repoDetail.html_url}}" target="_blank">{{repoDetail.name}}</a></h4>
-                  <small class="last-update">Last Updated: <strong>{{repoDetail.updated_at|date}}</strong>&nbsp;&nbsp;|&nbsp;&nbsp;<i class="fa fa-clone" aria-hidden="true"></i>&nbsp;&nbsp;Clone:&nbsp;&nbsp;<strong appCloneHighlighter>{{repoDetail.clone_url}}</strong></small>
+                  <small class="last-update">Created At: <strong>{{repoDetail.created_at|date}}</strong>&nbsp;&nbsp;|&nbsp;&nbsp;<i class="fa fa-clone" aria-hidden="true"></i>&nbsp;&nbsp;Clone:&nbsp;&nbsp;<strong appCloneHighlighter>{{repoDetail.clone_url}}</strong></small>
                   <p class="description">{{repoDetail.description}}</p>
+                  <small class="last-update">Language: <strong>{{repoDetail.language}}</strong>&nbsp;&nbsp;|&nbsp;&nbsp;Last Updated: <strong>{{repoDetail.updated_at|daysCount}} Days Ago</strong></small>
               </div>
           </div>                       
       </div>                  

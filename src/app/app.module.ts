@@ -13,6 +13,7 @@ import { SearchGithubService } from './search-github.service';
 import { DateFormatPipe } from './date-format.pipe';
 import { RepoFormComponent } from './repo-form/repo-form.component';
 import { CloneHighlighterDirective } from './clone-highlighter.directive';
+import { DaysCountPipe } from './days-count.pipe';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { CloneHighlighterDirective } from './clone-highlighter.directive';
       GitSearchResultsComponent,
       DateFormatPipe,
       RepoFormComponent,
-      CloneHighlighterDirective
+      CloneHighlighterDirective,
+      DaysCountPipe
    ], 
    imports: [
       BrowserModule,

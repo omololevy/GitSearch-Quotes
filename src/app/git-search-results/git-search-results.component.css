@@ -41,6 +41,9 @@
     color: #636e7b;
 }
 
+div.profile {
+	position: fixed;
+}
 
 .stat a {
 	color: #1CAF9A !important;
