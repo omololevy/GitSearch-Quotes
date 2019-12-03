@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'darker_grotesqueblack';
+    src: url('../fonts/darkergrotesque-black-webfont.woff2') format('woff2'),
+         url('../fonts/darkergrotesque-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'darker_grotesquebold';
+    src: url('../fonts/darkergrotesque-bold-webfont.woff2') format('woff2'),
+         url('../fonts/darkergrotesque-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'darker_grotesqueextrabold';
+    src: url('../fonts/darkergrotesque-extrabold-webfont.woff2') format('woff2'),
+         url('../fonts/darkergrotesque-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'darker_grotesquelight';
+    src: url('../fonts/darkergrotesque-light-webfont.woff2') format('woff2'),
+         url('../fonts/darkergrotesque-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'darker_grotesquemedium';
+    src: url('../fonts/darkergrotesque-medium-webfont.woff2') format('woff2'),
+         url('../fonts/darkergrotesque-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'darker_grotesqueregular';
+    src: url('../fonts/darkergrotesque-regular-webfont.woff2') format('woff2'),
+         url('../fonts/darkergrotesque-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'darker_grotesquesemibold';
+    src: url('../fonts/darkergrotesque-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/darkergrotesque-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
