@@ -4,6 +4,8 @@ GitSearch-Quotes is simply an Angular App that uses Github API to retrieve user 
 
 [![git.png](https://i.postimg.cc/8CVT7HFm/git.png)](https://postimg.cc/G4zWNvx4)
 
+[![quotes.png](https://i.postimg.cc/FHZJxPtG/quotes.png)](https://postimg.cc/2116k7SB)
+
 ## Requirements
 
 Both the CLI and the project have dependecies that require Node together with NPM. So make sure you have these installed and working before proceeding.
