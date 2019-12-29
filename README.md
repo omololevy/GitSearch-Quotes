@@ -2,7 +2,7 @@
 
 GitSearch-Quotes is simply an Angular App that uses Github API to retrieve user data. Submit a username and it gives you repository details of the user, including number of repositories, commits and branches and also when it was last updated. It also has a quotes platform where you can add your favorite quotes in it. It includes a button to delete a quote that you don't find appropriate. You can also upvote or devote a quote based on your personal opinion about it. A quote with most likes will be highlighted. It will also give you the time since the quote has been created.
 
-[![git.png](https://i.postimg.cc/8CVT7HFm/git.png)](https://postimg.cc/G4zWNvx4)
+[![git.png](https://i.postimg.cc/SQCqQsZY/git.png)](https://postimg.cc/Lh9GNHFm)
 
 [![quotes-home.png](https://i.postimg.cc/ydYHLXmM/quotes-home.png)](https://postimg.cc/063FQSHn)
 
