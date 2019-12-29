@@ -4,7 +4,7 @@ GitSearch-Quotes is simply an Angular App that uses Github API to retrieve user 
 
 [![git.png](https://i.postimg.cc/8CVT7HFm/git.png)](https://postimg.cc/G4zWNvx4)
 
-[![quotes-home.png](https://i.postimg.cc/Gt7JvzXX/quotes-home.png)](https://postimg.cc/QK7T3gG7)
+[![quotes-home.png](https://i.postimg.cc/ydYHLXmM/quotes-home.png)](https://postimg.cc/063FQSHn)
 
 ## Requirements
 
