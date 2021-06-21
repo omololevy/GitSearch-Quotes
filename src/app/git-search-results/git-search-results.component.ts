@@ -1,6 +1,5 @@
 import { Component, OnInit,Output,EventEmitter } from '@angular/core'; // Here, we import Component from @angular/core which is where Component is located. We've also imported Output decorator and the EventEmitter class
 import { SearchGithubService } from '../search-github.service';
-import { HttpClient } from '@angular/common/http'; // Allows us to use HttpClient in our application
 import { NgForm } from '@angular/forms';
 import { User } from '../user'; // Imported the User blueprint class in src/app/user.ts
 
