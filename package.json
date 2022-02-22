@@ -23,7 +23,7 @@
     "@angular/router": "^7.2.13",
     "@ngx-progressbar/core": "^5.3.2",
     "@ngx-progressbar/http-client": "^3.0.2",
-    "angular-loader": "^1.6.10",
+    "angular-loader": "^1.8.2",
     "angular2-busy": "^2.0.4",
     "core-js": "^2.6.5",
     "ng-http-loader": "^5.1.0",
