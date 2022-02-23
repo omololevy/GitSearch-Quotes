@@ -25,7 +25,7 @@
     "@ngx-progressbar/http-client": "^3.0.2",
     "angular-loader": "^1.8.2",
     "angular2-busy": "^2.0.4",
-    "core-js": "^2.6.5",
+    "core-js": "^2.6.12",
     "ng-http-loader": "^5.1.0",
     "rxjs": "^6.4.0",
     "rxjs-compat": "^6.6.7",
